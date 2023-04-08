@@ -1,0 +1,317 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  user-select: none;
+  display: block;
+  box-sizing: border-box;
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+  cursor: url(Photos/Cursor7.png) 2 2, default;
+  background-image: url(Photos/Neon_circle.png);
+  background-repeat: no-repeat;
+  background-size: 1000px 600px;
+  background-attachment: fixed;
+  background-position: center center;
+  overflow: hidden;
+}
+
+.line {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(197, 197, 54);
+  border-radius: 30%;
+  position: absolute;
+  animation: neon-border-vertical 4s linear infinite alternate-reverse;
+}
+
+.line_1 {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(197, 197, 54);
+  border-radius: 30%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: neon-border-vertical 4s linear infinite alternate-reverse;
+}
+
+.line_2 {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(197, 197, 54);
+  border-radius: 30%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: neon-border-horizontal 4s linear infinite alternate-reverse;
+}
+
+.line_3 {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(197, 197, 54);
+  border-radius: 30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: neon-border-horizontal 4s linear infinite alternate-reverse;
+}
+
+@keyframes neon-border-vertical {
+  0% {
+    height: 0;
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    height: 100%;
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes neon-border-horizontal {
+  0% {
+    width: 0;
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    width: 100%;
+    filter: hue-rotate(360deg);
+  }
+}
+
+#mouse-line {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+}
+
+.text {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  left: -49.5%;
+  right: 0;
+  top: 20.3%;
+  text-align: center;
+  font-size: 22px;
+  color: aqua;
+  position: absolute;
+  z-index: 1;
+}
+
+.text span:hover {
+  color: brown;
+}
+
+.text_1 {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  right: -51%;
+  left: 0;
+  top: 19%;
+  text-align: center;
+  font-size: 27px;
+  color: aqua;
+  position: absolute;
+  z-index: 1;
+}
+
+.text_1 span:hover {
+  color: brown;
+}
+
+.text_2 {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  left: -50%;
+  right: 0;
+  top: 63%;
+  text-align: center;
+  font-size: 27px;
+  color: aqua;
+  position: absolute;
+  z-index: 1;
+}
+
+.text_2 span:hover {
+  color: brown;
+}
+
+.text_3 {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 79%;
+  text-align: center;
+  font-size: 27px;
+  color: aqua;
+  text-decoration: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.text_3:hover {
+  color: brown;
+}
+
+.text_4 {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 7%;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(0, 255, 179);
+  position: absolute;
+  z-index: 1;
+}
+
+.text_4 span:hover {
+  color: brown;
+}
+
+.text_5 {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: -58%;
+  top: 63%;
+  text-align: center;
+  font-size: 27px;
+  color: aqua;
+  position: absolute;
+  z-index: 1;
+}
+
+.text_5 span:hover {
+  color: brown;
+}
+
+@media (max-width: 1000px) {
+  html,
+  body {
+    background-image: url(Photos/стрела.png);
+  }
+  .text {
+    font-size: 22px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 37%;
+  }
+  .text_1 {
+    font-size: 22px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 22%;
+  }
+  .text_2 {
+    font-size: 22px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 52%;
+  }
+  .text_5 {
+    font-size: 22px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 67%;
+  }
+  .text_3 {
+    font-size: 22px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 85%;
+  }
+  .text_4 {
+    font-size: 30px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 7%;
+  }
+}
+
+@media (min-height: 550px) and ((max-height: 650px)) {
+  .text_4 {
+    top: 0%;
+  }
+  .text_1 {
+    top: 18%;
+  }
+  .text_3 {
+    top: 90%;
+  }
+}
+
+@media (min-height: 750px) and (max-height: 850px) {
+  .text_1 {
+    top: 25%;
+  }
+  .text {
+    top: 40%;
+  }
+  .text_5 {
+    top: 65%;
+  }
+  .text_3 {
+    top: 80%;
+  }
+  .text_4 {
+    top: 10%;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1280px) {
+  html,
+  body {
+    background-size: 900px 600px;
+  }
+  .text,
+  .text_1,
+  .text_4 {
+    transform: translateY(-20px);
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1600px) {
+  html,
+  body {
+    background-size: 1200px 700px;
+  }
+  .text,
+  .text_1,
+  .text_4 {
+    transform: translateY(15px);
+  }
+  .text_2,
+  .text_5 {
+    transform: translateY(-10px);
+  }
+}
